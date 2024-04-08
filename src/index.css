@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Wardrum';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./assets/fonts/Wardrum-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'WardrumBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./assets/fonts/Wardrum-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./assets/fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./assets/fonts/Gotham-Light.otf);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  caret-color: rgba(73, 73, 73, 100);
+  overflow: hidden !important;
+  width: 100%;
+}
+
+#root {
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body #fp-nav.fp-left {
+  left: 12px;
+  z-index: 9;
+}
+
+body #fp-nav ul li {
+  margin: 10px;
+}
+
+body #fp-nav ul li a span,
+body #fp-nav ul li a.active span {
+  height: 18px;
+  width: 3px;
+  border-radius: 3px;
+  background: #7B7B7B;
+  margin: -6px 0 0 -2px;
+}
+
+body #fp-nav ul li:hover a span {
+  height: 18px;
+  width: 3px;
+  background: #fff;
+  margin: -6px 0 0 -2px;
+}
+
+body #fp-nav ul li a.active span,
+body #fp-nav ul li:hover a.active span {
+  height: 18px;
+  width: 3px;
+  background: #fff;
+  margin: -6px 0 0 -2px;
+  border-radius: unset;
+}
+
+body #fullpage .section .fp-watermark {
+  display: none;
+}
+
+.section {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 425px) {
+  body #fp-nav.fp-left {
+    left: 4px;
+  }
+}

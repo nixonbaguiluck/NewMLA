@@ -1,0 +1,400 @@
+.contact {
+  min-height: 100vh;
+  background: url('../../assets/images/contact/contact-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  transition: 0.5s;
+}
+
+.contact h1 {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+
+.contact p {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #d3f0ff;
+  margin-top: 15px;
+}
+
+.contact-us {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.3287px;
+  line-height: 16px;
+  color: #dddddd;
+  background: linear-gradient(90deg, #2b87d7 0%, #28c4f7 50%, #28c4f7 50%, #2b87d7 100%);
+  background-size: 220% 100% !important;
+  border-radius: 3.42866px;
+  padding: 15.429px 24.0006px;
+  border: none;
+  margin-top: 10px;
+}
+
+.contact-element1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 98;
+}
+
+.contact-element2 {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  z-index: 9999;
+}
+
+.contact-content {
+  padding: 30px 40px 30px 0;
+}
+
+.girl {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.contact-sidebar {
+  background: #212b36;
+  padding: 70px 70px 0 30px;
+  pointer-events: all;
+}
+
+.contact-modal.content-after {
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 100vh;
+  background: #212b36;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.contact-modal h3 {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.contact-modal span {
+  color: #ff30f7;
+}
+
+.contact-modal input {
+  background: #161c24;
+  border-radius: 5px;
+  border: none;
+  padding: 16px 25px;
+  font-size: 18px;
+  font-family: 'GothamLight';
+  width: 100%;
+  color: #ffffff;
+}
+
+.contact-modal textarea {
+  background: #161c24;
+  border-radius: 5px;
+  border: none;
+  padding: 16px 25px;
+  font-size: 18px;
+  font-family: 'GothamLight';
+  width: 100%;
+  color: #ffffff;
+  resize: none;
+}
+
+.contact-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.3287px;
+  line-height: 16px;
+  color: #dddddd;
+  background: linear-gradient(267.41deg, #28c4f7 2.08%, #2b87d7 101.08%);
+  border-radius: 3.42866px;
+  padding: 15.429px 24.0006px;
+  border: none;
+}
+
+.cancel-btn {
+  border: none;
+  background: transparent;
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.overlay-base {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0e1a24e8;
+  opacity: 0;
+  transition-property: background-color, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.menu-logo img {
+  max-width: 100%;
+}
+
+.overlay-after {
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: #0e1a24e8;
+  opacity: 1;
+}
+
+.overlay-before {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+}
+
+.content-base {
+  position: relative;
+  margin: 0 auto;
+  border: 0;
+  outline: 0;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+  transform: translateX(100%);
+  background-color: transparent;
+  transition-property: background-color, opacity, transform;
+  transition-duration: 1.5s;
+  transition-delay: 0.5s;
+  transition-timing-function: unset;
+}
+
+.content-after {
+  transform: translateX(0);
+  opacity: 1;
+  /* width: 100%;
+    height: auto; */
+  min-height: 100vh;
+  /* padding: 10% 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-before {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.input-form {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1440px) {
+  .girl {
+    width: 500px;
+  }
+
+  .contact-element1 {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1440px),
+screen and (max-height: 625px) {
+  .contact-block {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1280px),
+screen and (max-height: 800px) {
+  .contact-modal h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .contact-modal input,
+  .contact-modal textarea {
+    padding: 10px 20px;
+  }
+
+  .input-form {
+    margin-bottom: 15px;
+  }
+
+  .contact-sidebar {
+    padding: 40px 50px 0 30px;
+  }
+
+  .contact-sidebar .close {
+    top: 15px;
+  }
+
+  .contact-modal.content-after {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1000px),
+screen and (max-height: 576px) {
+  .contact {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding-top: 120px;
+  }
+
+  .contact .col-lg-6 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contact h1 {
+    margin: 0;
+  }
+
+  .contact p br {
+    display: none;
+  }
+
+  .contact h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .contact p {
+    margin: 10px 0 !important;
+    font-size: 18px;
+  }
+
+  .contact-block {
+    width: 80%;
+  }
+
+  .contact-content {
+    padding: 0;
+  }
+
+  .girl {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-block {
+    width: 70%;
+  }
+
+  .girl {
+    width: 40%;
+    right: 5%;
+  }
+
+  .contact-us {
+    margin: 0;
+  }
+
+  .contact .row {
+    align-items: center;
+  }
+
+  .contact p {
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-block {
+    width: 90%;
+  }
+
+  .girl {
+    width: 90%;
+    right: 0;
+  }
+
+  .contact {
+    padding-top: 120px;
+  }
+
+  .contact-element1 {
+    width: 50%;
+  }
+
+  .contact-modal.content-after {
+    width: 100%;
+  }
+
+  .contact-sidebar {
+    padding: 60px 50px 0 30px;
+  }
+}
+
+@media (max-width: 425px),
+screen and (max-height: 800px) {
+  .contact-sidebar {
+    padding: 50px 50px 0 30px;
+  }
+
+  .contact-modal h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .contact-modal input,
+  .contact-modal textarea {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-us {
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 375px),
+screen and (max-height: 600px) {
+  .contact-sidebar {
+    padding: 50px 50px 20px 30px;
+    overflow: scroll;
+  }
+}

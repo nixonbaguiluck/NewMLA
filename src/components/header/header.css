@@ -1,0 +1,243 @@
+#header {
+  overflow: hidden;
+}
+
+.navbar {
+  padding: 30px 50px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.header-icon {
+  margin-right: 25px;
+  transition: 0.5s;
+}
+
+.header-icon:hover {
+  scale: 1.2;
+}
+
+.quote-btn {
+  font-size: 14px;
+  font-family: 'Gotham';
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.quote-btn:before,
+.quote-btn:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: '';
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(267.41deg, #28c4f7 0%, #2b87d7 100%);
+}
+
+.quote-btn:before {
+  filter: blur(7px);
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+.quote-btn:after {
+  filter: blur(0.1px);
+}
+
+.quote-btn:hover:before {
+  width: 110%;
+  height: 120%;
+}
+
+.hamburger-wrap {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.hamburger-wrap #hamburger {
+  width: 30px;
+}
+
+.hamburger-wrap #hamburger span {
+  transition: 0.5s;
+}
+
+.hamburger-wrap span {
+  width: 25px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  background: #fff;
+}
+
+.hamburger-wrap:hover {
+  cursor: pointer;
+}
+
+.hamburger-wrap:hover #hamburger span:nth-child(2) {
+  width: 50%;
+}
+
+.menu-section {
+  background: linear-gradient(
+    25.92deg,
+    #411dc4 -2.21%,
+    #b04dcb 30.32%,
+    #e179c3 60.99%,
+    #f8c77d 94.04%
+  );
+  height: 100vh;
+  position: absolute;
+  width: 420px;
+  pointer-events: all;
+  right: 0;
+  z-index: 99999;
+  overflow: hidden;
+  align-items: center;
+}
+
+nav ul.menu {
+  list-style: none;
+  margin: 50px;
+  text-align: left;
+}
+
+nav ul.menu li {
+  margin-bottom: 30px;
+}
+
+nav ul.menu li a {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+/*hover effect*/
+.underline-hover::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 4px;
+  background-color: whitesmoke;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  z-index: 500;
+  opacity: 1;
+  padding: 5px 30px;
+  border-radius: 100% !important;
+  font-weight: 100;
+  right: 0;
+  top: 30px;
+  font-size: 36px;
+  color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close:hover {
+  scale: 1.3;
+}
+
+@media (max-width: 768px) {
+  .header-controls a,
+  .header-controls button {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .black {
+    background-color: #000;
+  }
+
+  .navbar {
+    padding: 18px 40px;
+  }
+
+  .menu-section {
+    width: 100%;
+  }
+}
+
+@media (max-height: 576px) {
+  .black {
+    background-color: #000;
+  }
+
+  .navbar {
+    padding: 18px 40px;
+  }
+
+  .menu-section {
+    overflow-y: scroll;
+  }
+
+  nav ul.menu li a {
+    font-size: 30px;
+  }
+
+  nav ul.menu li {
+    margin-bottom: 16px;
+  }
+
+  nav ul.menu {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu-section {
+    width: 100%;
+  }
+
+  nav ul.menu {
+    margin: 40px;
+    padding-left: 0;
+  }
+
+  .navbar {
+    padding: 20px 30px;
+  }
+}

@@ -1,0 +1,315 @@
+.aucm {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 8%;
+    background: url("../../assets/images/aucm/aucm-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Gotham';
+    transition: all 1s ease-in-out;
+}
+
+.aucm .fp-overflow {
+    overflow-x: hidden;
+}
+
+.aucm-element1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.aucm-element2 {
+    position: absolute;
+    left: 20%;
+    top: 12%;
+}
+
+.aucm-content {
+    display: flex;
+}
+
+.aucm-content p {
+    font-family: 'GothamLight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.aucm-title {
+    flex: 1;
+    line-height: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aucm-title h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.aucm-title h5 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.aucm-text {
+    flex: 1.5;
+}
+
+.aucm .slick-slide .slider-item>div {
+    position: relative;
+}
+
+/* .aucm .slick-slide:not(.slick-current) .slider-item>div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: linear-gradient(to top right, #30173ece, rgba(22, 25, 58, 0.316) 40%, #0d233bd4 100%), linear-gradient(to top left, #040e27, rgba(22, 25, 58, 0), #0d1b29c5 100%) rgba(22, 25, 58, 0.607);
+} */
+
+.aucm .slick-track {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    /* max-width:100%; */
+}
+
+.fp-overflow::-webkit-scrollbar {
+    display: none;
+}
+
+.aucm .slider-item {
+    position: relative;
+    padding-right: 40px;
+    overflow: visible;
+}
+
+.aucm .slider-item:hover {
+    cursor: grab;
+    /* cursor: url("../../assets/images/cursor.png"), auto; */
+}
+
+/* .aucm .slider-item:active {
+    cursor: pointer;
+} */
+
+.aucm .item-2>div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(40, 195, 246, 0.379) 35.02%, #2b8eda7c 80%, rgb(6, 59, 92) 100%) !important;
+    /* background: linear-gradient(216.75deg, rgba(40, 194, 246, 0.7) 35.02%, #2B8DDA 97.1%); */
+}
+
+.aucm .item-3>div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(220.54deg, rgba(208, 71, 13, 0.2) 6.07%, #B51482 75.78%) !important;
+}
+
+.aucm .item-4>div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(38.69deg, #4E6BF9 1.37%, rgba(168, 93, 254, 0.53) 80.19%) !important;
+}
+
+.slider-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 40px;
+}
+
+.slider-content h2 {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.slider-content h1 {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+.slider-content p {
+    font-family: 'GothamLight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.aucm .slick-track div[aria-hidden=true]+div[aria-hidden=true]+div[aria-hidden=true]+div[data-index='3'] .slider-item>div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(38.69deg, #4E6BF9 1.37%, rgba(168, 93, 254, 0.53) 80.19%);
+}
+
+
+@media (max-width: 1440px) {
+    .aucm .slick-track {
+        padding-top: 50px;
+    }
+
+    .aucm-content p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1440px),
+screen and (max-height: 625px) {
+    .aucm-content p {
+        line-height: 30px;
+        margin-bottom: 10px !important;
+    }
+
+    .aucm .slick-track {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .aucm-content p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .aucm-title h5 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .aucm-title h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .slider-content {
+        padding: 20px;
+    }
+
+    .slider-content p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    .slider-content h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aucm .slick-track {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aucm {
+        padding-top: 12%;
+    }
+
+    .aucm-content {
+        flex-direction: column;
+    }
+
+    .aucm-title {
+        flex-direction: column-reverse;
+    }
+
+    .aucm .slider-item {
+        padding: 0 10px;
+    }
+
+    .aucm .slick-slider {
+        overflow: hidden;
+    }
+
+    .aucm .slick-slide:not(.slick-active) {
+        visibility: visible;
+    }
+
+    .aucm .slick-slide:not(.slick-active) div {
+        visibility: visible;
+    }
+
+    .aucm .slick-slide:not(.slick-active) div img {
+        visibility: visible !important;
+    }
+
+    .aucm .slick-track {
+        padding-top: 50px;
+    }
+
+    .aucm-element1,
+    .aucm-element2 {
+        display: none;
+    }
+
+    .aucm .slick-track div[data-index='3']+div {
+        display: none;
+        width: 0 !important;
+    }
+}
+
+@media (max-height: 576px) {
+    .aucm {
+        padding: 10% 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .aucm {
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 374px) and (max-height: 600px) {
+    .h-100 {
+        height: initial !important;
+    }
+}

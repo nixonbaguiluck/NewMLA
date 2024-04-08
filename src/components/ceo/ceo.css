@@ -1,0 +1,403 @@
+.ceo {
+  position: relative;
+  background: url('../../assets/images/ceo/ceo-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  display: block !important;
+  transition: all 1s ease-in-out;
+}
+
+.ceo-element {
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.ceo-img {
+  position: relative;
+  visibility: visible;
+  overflow: hidden;
+  width: 650px;
+}
+
+.ceo-img img {
+  /* opacity: 0; */
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ceo-banner:first-of-type {
+  margin-bottom: 0;
+}
+
+.ceo-banner {
+  font-family: 'Wardrum';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.ceo-content {
+  position: relative;
+  width: 50%;
+  height: 75%;
+  padding-top: 8%;
+  padding-left: 5%;
+  padding-bottom: 25px;
+}
+
+.ceo-content p {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 24px;
+  color: #d3f0ff;
+}
+
+.ceo-content h3 {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: #d3f0ff;
+  opacity: 0.5;
+}
+
+.ceo-total {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  background: #7b1d3a;
+  padding: 45px 120px;
+  border-radius: 5px;
+  z-index: 10;
+  width: 102%;
+  transform: translateX(-2%);
+  background: linear-gradient(59.62deg, #2b8ad9 27.58%, #28c2f6 73.94%);
+}
+
+.ceo-total p {
+  font-family: 'GothamLight';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.ceo-content-box {
+  height: 100vh;
+}
+
+@media (max-height: 880px) {
+  .ceo-content {
+    padding-top: 6%;
+    padding-bottom: 25px;
+    height: 72%;
+  }
+}
+
+@media (max-height: 850px) {
+  .ceo-content {
+    width: 60%;
+  }
+
+  .ceo-banner {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .ceo-content p {
+    margin-bottom: 15px;
+  }
+
+  .ceo-total {
+    padding: 30px 80px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .ceo-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .ceo-content {
+    padding-top: 7%;
+    height: 73%;
+  }
+
+  .total {
+    padding: 20px 100px;
+  }
+
+  .ceo-content p {
+    font-size: 18px;
+  }
+
+  .total h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1400px), screen and (max-height: 625px) {
+  .ceo-banner {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .ceo-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 24px;
+  }
+
+  .ceo-content {
+    padding-bottom: 16px;
+    width: 80%;
+    height: 70%;
+  }
+
+  .ceo .mb-3 {
+    margin-bottom: 0.7rem !important;
+  }
+
+  .ceo-content h3 {
+    margin-top: 1rem !important;
+  }
+
+  .ceo .mt-3 {
+    margin-top: 0.5rem !important;
+  }
+
+  .total {
+    padding: 10px 50px;
+  }
+
+  .total h2 {
+    font-size: 24px;
+  }
+
+  .total p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .ceo-content {
+    padding-top: 10%;
+  }
+
+  .public {
+    flex: 1;
+  }
+
+  .ceo-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px), screen and (max-height: 625px) {
+  .ceo-banner {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .ceo-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 24px;
+  }
+
+  .ceo-content {
+    padding-bottom: 8px;
+    width: 80%;
+    height: 70%;
+  }
+
+  .ceo .mb-3 {
+    margin-bottom: 0.7rem !important;
+  }
+
+  .ceo-content h3 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .ceo .mt-3 {
+    margin-top: 0.5rem !important;
+  }
+
+  .total {
+    padding: 10px 50px;
+  }
+
+  .total h2 {
+    line-height: 35px;
+  }
+
+  .total p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ceo-content p {
+    font-size: 14px;
+  }
+
+  .ceo .gap-5 {
+    gap: 1rem !important;
+    margin-top: 0px !important;
+  }
+
+  .ceo-content h3 {
+    margin: 10px 0 !important;
+  }
+
+  .ceo-element {
+    top: 35%;
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ceo-main {
+    flex-direction: column;
+  }
+
+  .ceo-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ceo-img img {
+    /* opacity: 0; */
+    height: auto;
+    width: 100%;
+  }
+
+  .ceo-content {
+    position: relative;
+    padding: 20px;
+    left: initial;
+    width: 100%;
+    top: initial;
+  }
+
+  .ceo-element {
+    display: none;
+  }
+
+  .ceo-content h3 {
+    margin: 30px 0 !important;
+  }
+
+  .ceo .gap-5 {
+    flex-wrap: wrap;
+    gap: 2rem !important;
+  }
+
+  .total {
+    position: relative !important;
+    width: auto;
+    margin: 20px 20px 50px 20px;
+    padding: 40px 60px;
+    flex-direction: column;
+    gap: 30px;
+    bottom: 0;
+    transform: none;
+  }
+
+  .total p {
+    font-size: 18px;
+  }
+
+  .total h2 {
+    font-size: 28px;
+  }
+
+  .ceo-content-box {
+    height: fit-content;
+  }
+}
+
+@media (max-height: 576px) {
+    .ceo-main {
+        flex-direction: column;
+      }
+    
+      .ceo-img {
+        width: 100%;
+        height: auto;
+      }
+    
+      .ceo-img img {
+        /* opacity: 0; */
+        height: auto;
+        width: 100%;
+      }
+    
+      .ceo-content {
+        position: relative;
+        padding: 20px;
+        left: initial;
+        width: 100%;
+        top: initial;
+      }
+    
+      .ceo-element {
+        display: none;
+      }
+    
+      .ceo-content h3 {
+        margin: 30px 0 !important;
+      }
+    
+      .ceo .gap-5 {
+        flex-wrap: wrap;
+        gap: 2rem !important;
+      }
+    
+      .total {
+        position: relative !important;
+        width: auto;
+        margin: 20px 20px 50px 20px;
+        padding: 40px 60px;
+        flex-direction: column;
+        gap: 30px;
+        bottom: 0;
+        transform: none;
+      }
+    
+      .total p {
+        font-size: 18px;
+      }
+    
+      .total h2 {
+        font-size: 28px;
+      }
+    
+      .ceo-content-box {
+        height: fit-content;
+      }
+}
+
+@media (max-width: 428px) {
+  .ceo-banner {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
